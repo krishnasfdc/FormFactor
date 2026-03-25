@@ -1,0 +1,99 @@
+.header-container {
+    display: flex;
+    background-color: #0051a5;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 36px;
+    padding: 20px 30px;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.column-1 {
+    justify-content: flex-start;
+}
+
+.column-1 .logo svg {
+    width: 80px;
+    height: 80px;
+}
+
+.column-2 {
+    justify-content: center;
+    flex: 2;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-list li {
+    font-size: 16px;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-list a:hover {
+    opacity: 0.8;
+}
+
+.menu-list a.active {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.column-3 {
+    justify-content: flex-end;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+}
+
+.initials {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        font-size: 28px;
+    }
+
+    .column-2 {
+        flex: 1;
+        order: -1;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

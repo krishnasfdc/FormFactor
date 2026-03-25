@@ -1,0 +1,32 @@
+<template>
+    <div class="header-container">
+        <!-- Column 1: City National Bank Logo -->
+        <div class="header-column column-1">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#fff" rx="5"/>
+                    <text x="50" y="55" font-size="24" font-weight="bold" text-anchor="middle" fill="#0051a5">CNB</text>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Column 2: Menu List -->
+        <div class="header-column column-2">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="#" onclick={handleMenuClick} data-item="Dashboard">Dashboard</a></li>
+                    <li><a href="javascript:void(0);" onclick={handleMenuClick} data-item="Admin Center">Admin Center</a></li>
+                    <li><a href="javascript:void(0);" onclick={handleMenuClick} data-item="Download Center">Download Center</a></li>
+                    <li><a href="javascript:void(0);" onclick={handleMenuClick} data-item="Support">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Column 3: Profile Avatar -->
+        <div class="header-column column-3">
+            <div class="profile-avatar">
+                <span class="initials">JJ</span>
+            </div>
+        </div>
+    </div>
+</template>
